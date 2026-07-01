@@ -19,3 +19,31 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+## 🔀 Git Workflow
+
+```bash
+# ── See what changed ────────────────────────────────────────────
+git status
+
+# ── Stage everything ────────────────────────────────────────────
+git add .
+
+# ── Review staged changes ───────────────────────────────────────
+git diff --staged
+
+# ── Commit (Conventional Commits format) ───────────────────────
+git commit -m "feat(firmware): scaffold project and add ESP32 heartbeat simulation
+
+- Add PlatformIO config targeting ESP32 DevKit v1
+- Add config.h with centralized pin and timing constants
+- Implement heartbeat LED pattern with Serial diagnostics
+- Add Wokwi diagram.json and wokwi.toml for browser simulation
+- Scaffold backend/ and ml/ directories for future milestones
+- Add docs/architecture.md with system overview
+- Update README.md with Wokwi simulation badge and milestone table"
+
+# ── Push ────────────────────────────────────────────────────────
+git push origin main

@@ -67,3 +67,20 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+# PlatformIO build artifacts
+.pio/
+*.bin
+*.elf
+
+# Python artifacts (for later milestones)
+__pycache__/
+*.pyc
+.venv/
+*.env
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# IDE settings (optional — some teams commit these)
+.vscode/settings.json
